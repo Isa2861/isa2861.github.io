@@ -13,7 +13,7 @@
   margin-top: -80px;
 
   @media (max-width: $breakpoint) {
-    background: linear-gradient($primary, var(--bs-body-bg) 90%);
+    background: linear-gradient($primary, var(--bs-body-bg) 95%);
     height: 400px;
     padding-top: 24px;
     margin-top: -48px;
@@ -42,10 +42,9 @@
       }
     }
   }
-
-  .home-profile-photo {
+   .home-profile-photo {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
 
     img {

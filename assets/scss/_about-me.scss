@@ -14,9 +14,39 @@
 
 .who-i-am {
   display: flex;
-  text-align: center;
-  flex-direction: column;
+  justify-content: center;
+  text-align: start;
   gap: 32px;
+
+  .home-profile-photo {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+
+    img {
+      $img-size: 400px;
+
+      height: $img-size;
+      width: $img-size;
+      object-fit: contain;
+
+      @media (min-width: $breakpoint) {
+        border-radius: 50%;
+        border: 2px solid var(--bs-body-bg);
+      }
+    }
+
+    @media (max-width: $breakpoint) {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+
+      img {
+        display: none;
+      }
+    }
+  }
 
   @media (max-width: $breakpoint) {
     gap: 16px;

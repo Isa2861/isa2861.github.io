@@ -30,6 +30,7 @@
     border-radius: 10px;
     gap: 24px;
     max-width: 600px;
+    text-align: left;
 
     .cv-name-role {
       display: flex;
@@ -103,6 +104,7 @@
     flex-direction: column;
     gap: 24px;
     text-align: left;
+    
 
     .cv-work-experiences {
       display: flex;
@@ -140,8 +142,3 @@
   }
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
