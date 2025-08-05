@@ -394,7 +394,7 @@
 .custom-input::placeholder {
   color: #d4d4d4;
 }
-.custom-input:-moz-placeholder + label {
+.custom-input:-moz-placeholder-shown + label {
   position: absolute;
   top: 10px;
   left: 0;
@@ -411,7 +411,7 @@
   color: #d4d4d4;
   transition: all 0.2s ease;
 }
-.custom-input:not(:-moz-placeholder) + label {
+.custom-input:not(:-moz-placeholder-shown) + label {
   top: -10px;
   font-size: 12px;
   color: #4e2bb6;
@@ -550,121 +550,23 @@ label {
   display: flex;
   flex-direction: column;
   gap: var(--sections-gap);
-}
-
-.cv-container {
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding: 0 64px;
-}
-.cv-container h3 {
-  color: #4e2bb6;
-}
-@media (max-width: 768px) {
-  .cv-container {
-    padding: 0 24px;
-    gap: 24px;
-  }
-}
-.cv-container .left-cv {
-  display: flex;
-  flex-direction: column;
-  border: #d4d4d4 solid 2px;
-  padding: 24px;
-  border-radius: 10px;
-  gap: 24px;
-  max-width: 600px;
   text-align: left;
 }
-.cv-container .left-cv .cv-name-role {
+.cv .cv-item {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 1rem;
 }
-.cv-container .left-cv h2 {
-  font-weight: 400;
-}
-.cv-container .left-cv li {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-}
-.cv-container .left-cv .cv-profile {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.cv-container .left-cv .cv-skills {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.cv-container .left-cv .cv-skills .lucide:hover {
-  color: var(--bs-body-color);
-}
-.cv-container .left-cv .cv-languages {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.cv-container .left-cv .cv-languages .cv-languages-list {
-  display: flex;
-  gap: 24px;
-}
-.cv-container .left-cv .cv-languages .cv-languages-list .cv-languages-language {
+.cv .cv-item .cv-subitem {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
-.cv-container .left-cv .cv-languages .cv-languages-list .cv-languages-progress-bars {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  width: 100%;
-  justify-content: center;
-}
-.cv-container .left-cv .cv-languages .cv-languages-list .cv-languages-progress-bars .progress {
-  height: 10px;
-  background-color: #d4d4d4;
-}
-.cv-container .left-cv .cv-languages .cv-languages-list .cv-languages-progress-bars .progress .progress-bar {
-  background-color: #4e2bb6;
-}
-.cv-container .right-cv {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-  text-align: left;
-}
-.cv-container .right-cv .cv-work-experiences {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.cv-container .right-cv .cv-work-experiences .cv-internships {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.cv-container .right-cv .cv-work-experiences .cv-work-related-learning-program {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.cv-container .right-cv .cv-education {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.cv-container .right-cv .cv-education .cv-education-path {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.cv-container .right-cv i {
+.cv i {
   font-size: 14px;
+}
+.cv h4 {
+  color: #4e2bb6;
 }
 
 body {
@@ -788,7 +690,9 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+h4,
+.h4 {
   font-weight: 700;
   font-family: "DM Sans";
   margin-bottom: 0;
@@ -807,6 +711,12 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-weight: 400;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
   font-weight: 400;
 }
 
