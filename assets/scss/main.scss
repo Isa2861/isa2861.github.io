@@ -1,10 +1,10 @@
-@import "vars";
-@import "home";
-@import "menu";
-@import "about-me";
-@import "contact-me";
-@import "portfolio";
-@import "cv";
+@import 'vars';
+@import 'home';
+@import 'menu';
+@import 'about-me';
+@import 'contact-me';
+@import 'portfolio';
+@import 'cv';
 
 body {
   --bs-body-bg: #{$bg-dark};
@@ -13,7 +13,7 @@ body {
   --section-internal-gap: 16px;
 
   @media (min-width: $breakpoint) {
-    --sections-gap: 48px;
+    --sections-gap: 64px;
     --section-internal-gap: 24px;
   }
 
@@ -35,7 +35,7 @@ body {
   }
 
   font-size: 16px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-weight: 400;
 
   display: flex;
@@ -102,7 +102,7 @@ footer {
 .btn {
   border-radius: 20px;
   padding: 8px 24px;
-  font-family: "Poppins";
+  font-family: 'Poppins';
   font-size: 16px;
   border: solid 2px $primary;
 
@@ -134,9 +134,11 @@ h1,
 h2,
 .h2,
 h3,
-.h3 {
+.h3,
+h4,
+.h4 {
   font-weight: 700;
-  font-family: "DM Sans";
+  font-family: 'DM Sans';
   margin-bottom: 0;
 }
 
@@ -151,6 +153,11 @@ h2,
 h3,
 .h3 {
   font-size: 24px;
+  font-weight: 400;
+}
+h4,
+.h4 {
+  font-size: 20px;
   font-weight: 400;
 }
 

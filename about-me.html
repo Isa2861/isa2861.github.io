@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Get to know me through my CV website" />
+    <meta name="description" content="Take a look at my website" />
+
+    <meta
+      property="og:title"
+      content="Isabella Guerrini | Junior UX/UI Designer"
+    />
+    <meta property="og:description" content="Take a look at my website" />
+    <meta
+      property="og:image"
+      content="https://isa2861.github.io/assets/img/og-img.png"
+    />
+    <meta property="og:url" content="https://isa2861.github.io" />
+    <meta property="og:type" content="website" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +37,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="/dist/css/main.css" />
-    <link rel="stylesheet" href="/dist/css/about-me.css" />
 
     <title>About me</title>
   </head>
@@ -41,16 +52,18 @@
         class="d-md-none"
       ></i>
 
-      <a href="index.html"
-        ><img
+      <a href="index.html">
+        <img
           src="assets/img/logo-white.svg"
           class="logo-white"
-          alt="My Logo White" />
+          alt="My Logo White"
+        />
         <img
           src="assets/img/logo-black.svg"
           class="logo-black"
           alt="My Logo Black"
-      /></a>
+        />
+      </a>
 
       <div class="header-right">
         <nav class="nav-links d-none d-md-flex">
@@ -62,13 +75,17 @@
         </nav>
         <div class="social-icons d-none d-md-flex">
           <a
-            href="https://www.linkedin.com/in/isabella-guerrini-673387231
-
-          "
-          
-            ><i data-lucide="linkedin"></i
-          ></a>
-          <a href="https://github.com/Isa2861/Isabella-Guerrini-CV-Website"><i data-lucide="github"></i></a>
+            href="https://www.linkedin.com/in/isabella-guerrini-673387231"
+            class="social-icon"
+          >
+            <i data-lucide="linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Isa2861/Isabella-Guerrini-CV-Website"
+            class="social-icon"
+          >
+            <i data-lucide="github"></i>
+          </a>
         </div>
         <div class="theme-btn">
           <div data-lucide="sun" class="sun-btn"></div>
@@ -85,16 +102,18 @@
         <div
           class="offcanvas-header justify-content-between align-items-center"
         >
-          <a href="index.html"
-            ><img
+          <a href="index.html">
+            <img
               src="assets/img/logo-white.svg"
               class="logo-white"
-              alt="My Logo White" />
+              alt="My Logo White"
+            />
             <img
               src="assets/img/logo-black.svg"
               class="logo-black"
               alt="My Logo Black"
-          /></a>
+            />
+          </a>
           <i
             data-lucide="x"
             class="close-icon"
@@ -108,10 +127,10 @@
               <a href="index.html">Home</a>
             </li>
             <li>
-              <a href="about-me.html" class="active">About me</a>
+              <a href="about-me.html">About me</a>
             </li>
             <li>
-              <a href="portfolio.html">Portfolio</a>
+              <a href="portfolio.html" class="active">Portfolio</a>
             </li>
             <li>
               <a href="contact-me.html">Contact me</a>
@@ -122,66 +141,71 @@
           </ul>
 
           <div class="social-icons">
-            <a href="https://www.linkedin.com/in/isabella-guerrini-673387231
-
-            "><i data-lucide="linkedin"></i></a>
-            <a href="https://github.com/Isa2861/Isabella-Guerrini-CV-Website"><i data-lucide="github"></i></a>
+            <a href="https://www.linkedin.com/in/isabella-guerrini-673387231">
+              <i data-lucide="linkedin"></i>
+            </a>
+            <a href="https://github.com/Isa2861/Isabella-Guerrini-CV-Website">
+              <i data-lucide="github"></i>
+            </a>
           </div>
         </div>
       </div>
     </header>
+
     <main>
       <div class="about-me">
-        <h1>About me</h1>
         <div class="who-i-am">
+          <div class="home-profile-photo">
+            <img src="/assets/img/photo-cv.png" alt="Profile Photo" />
+          </div>
           <div class="presentation flex-lg-row">
             <div class="who-i-am">
-              <h2>Who I am</h2>
               <div class="text">
+                <h2>About me</h2>
                 <p>
-                  I am a <strong>UX/UI Design student</strong> with a passion
-                  for creating simple, intuitive and user-centered interfaces.
-                  Highly team-oriented and eager to gain hands-on experience in
-                  the digital field.
+                  Junior UX /UI Designer with a passion for simple and intuitive
+                  design.
                 </p>
                 <p>
-                  I believe that
-                  <strong>minimal design</strong> has the power to simplify
-                  lives, connect people, and create meaningful experiences.
+                  I completed a master's degree at Start2impact University,
+                  where I worked on 9 practical projects, developing skills in
+                  Discovery, Accessibility, Wireframing, Prototyping, User
+                  Interface Design and User Testing, using tools such as Figma
+                  and Illustrator.
                 </p>
+                <p>I am curious, precise, creative and motivated to grow.</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="what-i-can-do">
-          <p class="h2">What I can do</p>
+        <div class="skills">
           <div class="skills flex-md-row">
             <div class="skills-card">
               <p class="h3">Hard Skills</p>
               <div class="hard-skills">
                 <div class="skill">
                   <i data-lucide="figma"></i>
-                  <p class="card-title">Figma</p>
+                  <p class="card-title">Wireframing and Prototyping</p>
                 </div>
                 <div class="skill">
                   <i data-lucide="pen-tool"></i>
-                  <p class="card-title">Illustrator</p>
+                  <p class="card-title">Graphics</p>
                 </div>
                 <div class="skill">
-                  <i data-lucide="wand-sparkles"></i>
-                  <p class="card-title">Photoshop</p>
+                  <i data-lucide="user-round-search"></i>
+                  <p class="card-title">User Research</p>
+                </div>
+                <div class="skill">
+                  <i data-lucide="user-round-check"></i>
+                  <p class="card-title">User Testing</p>
                 </div>
                 <div class="skill">
                   <i data-lucide="code"></i>
-                  <p class="card-title">VS Code</p>
+                  <p class="card-title">Programming</p>
                 </div>
                 <div class="skill">
-                  <i data-lucide="code-xml"></i>
-                  <p class="card-title">HTML</p>
-                </div>
-                <div class="skill">
-                  <i data-lucide="braces"></i>
-                  <p class="card-title">CSS</p>
+                  <i data-lucide="pencil-line"></i>
+                  <p class="card-title">Copywriting</p>
                 </div>
               </div>
             </div>
@@ -193,65 +217,48 @@
                   <p class="card-title">Teamwork</p>
                 </div>
                 <div class="skill">
+                  <i data-lucide="brain"></i>
+                  <p class="card-title">Critical Thinking</p>
+                </div>
+                <div class="skill">
                   <i data-lucide="handshake"></i>
                   <p class="card-title">Empathy</p>
                 </div>
                 <div class="skill">
-                  <i data-lucide="refresh-cw"></i>
-                  <p class="card-title">Adaptability</p>
+                  <i data-lucide="ruler"></i>
+                  <p class="card-title">Precision</p>
+                </div>
+                <div class="skill">
+                  <i data-lucide="message-circle-question-mark"></i>
+                  <p class="card-title">Curiosity</p>
                 </div>
                 <div class="skill">
                   <i data-lucide="brush"></i>
                   <p class="card-title">Creativity</p>
-                </div>
-                <div class="skill">
-                  <i data-lucide="ruler"></i>
-                  <p class="card-title">Precision</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="what-i-like">
-          <p class="h2">What I like</p>
+        <div class="interests">
+          <p class="h3">Interests</p>
           <div class="cards">
             <div class="card">
               <i data-lucide="music"></i>
-              <h3 class="card-title">Music</h3>
-              <p class="card-text">
-                Music plays a big role in my everyday life. Hard Rock and Heavy
-                Metal boost my energy and keep me <strong>motivated</strong>,
-                while Classical music helps me <strong>focus</strong>.
-              </p>
+              <p class="card-title">Music</p>
             </div>
             <div class="card">
               <i data-lucide="clapperboard"></i>
-              <h3 class="card-title">Cinema</h3>
-              <p class="card-text">
-                I enjoy exploring different genres, from sci-fi to horror. I'm
-                especially fascinated by the <strong>symbolism</strong> and
-                storytelling techniques.
-              </p>
+              <p class="card-title">Cinema</p>
             </div>
             <div class="card">
               <i data-lucide="book-open-text"></i>
-              <h3 class="card-title">Reading</h3>
-              <p class="card-text">
-                I'm passionate about fantasy and distopian books. Reading fuels
-                my
-                <strong>creativity</strong> and inspires me to think outside the
-                box.
-              </p>
+              <p class="card-title">Reading</p>
             </div>
             <div class="card">
               <i data-lucide="palette"></i>
-              <h3 class="card-title">Art</h3>
-              <p class="card-text">
-                I find <strong>inspiration</strong> in both romantic art and
-                modern design. Drawing and crafting are my favorite ways to
-                unwind.
-              </p>
+              <p class="card-title">Art</p>
             </div>
           </div>
         </div>
