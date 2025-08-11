@@ -25,14 +25,13 @@
 
     img {
       $img-size: 400px;
-
       height: $img-size;
       width: $img-size;
       object-fit: contain;
 
       @media (min-width: $breakpoint) {
         border-radius: 50%;
-        border: 2px solid var(--bs-body-bg);
+        border: 2px solid $primary;
       }
     }
 
@@ -87,7 +86,7 @@
   }
 }
 
-.what-i-can-do {
+.skills {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -140,7 +139,7 @@
   }
 }
 
-.what-i-like {
+.interests {
   display: flex;
   gap: 32px;
   flex-direction: column;
@@ -158,12 +157,12 @@
   display: flex;
   align-items: center;
   max-width: 296px;
-  background: linear-gradient(to top, $accent, var(--bs-body-bg) 90%);
   border: transparent;
   text-align: center;
   padding: 24px;
   gap: 16px;
-  color: $text-dark;
+  color: var($text-dark)
+  
 
   &-title {
     margin: 0;
